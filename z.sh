@@ -235,7 +235,7 @@ if type compctl >/dev/null 2>&1; then
         read -l compl
         reply=(${(f)"$(_z --complete "$compl")"})
     }
-    compctl -U -K _z_zsh_tab_completion _z
+    # compctl -U -K _z_zsh_tab_completion _z
 elif type complete >/dev/null 2>&1; then
     # bash
     # tab completion
